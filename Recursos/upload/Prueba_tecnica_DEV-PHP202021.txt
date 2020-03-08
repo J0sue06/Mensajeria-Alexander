@@ -1,0 +1,45 @@
+********
+A UTILIZAR
+********
+
+CodeIgniter 3 (ultimo release)
+HTML
+PHP 7
+MySQL
+Bootstrap 4 (ultimo release)
+JS
+CSS
+
+Plantilla Bootstrap: AdminLTE (https://adminlte.io/)
+
+********
+REQUERIMIENTOS DEL SISTEMA
+********
+
++Objetivos: Se requiere de una interfaz Web para manejo de Mensajeria interna dentro de la empresa.
+
++Descripción del proceso de negocio a digitalizar:
+
+Existe un departamento dentro de la empresa de nombre Mensajeria. El mismo se encarga de recibir todas la mensajeria externa (cartas, notificaciones, revistas, documentos legales, facturas, cheques, etc.) que llega a la empresa y gestionar su entrega DIGITAL hacia el personal interno al cual va dirigida dicha documentacion recibida.
+
+La logistica ACTUAL consiste en que el Dpto. de Mensajeria ESCANEA la documentacion recibida, la guarda en formato PDF, crea una carpeta en la computadora de quien escanea llamada FICHA con un codigo de 5 digitos al azar (Ficha-428), y guarda el PDF del documento en dicha carpeta. Luego comprime la carpeta en formato ZIP y le entrega el ZIP  al personal interno al cual va dirigida dicha documentacion. Al momento de entregarle el ZIP tambien le da un bolante donde se visualiza el nombre de la empresa o persona que envio el documento, la fecha de recepcion y la fecha de entrega. Luego de digitalizarla se destruye en fisico.
+
+Evidentemente este es un proceso muy manual y repetitivo, que puede traer problemas debido a errores humanos y que no existe un control del mismo ni un historico de los documentos.
+
++Meta: 
+- Desarrollar una interfaz Web multi usuario, donde cada empleado de la empresa tenga acceso con su correo y contraseña personal.
+- Que el dpto. de Mensajeria tenga una interfaz donde pueda crear la ficha de la documentacion, que se le genere un codigo unico al azar automatico.
+- Que el dpto. de Mensajeria entre a la ficha y pueda subir el documento en formato PDF
+- Que el dpto. de Mensajeria pueda asignarle la ficha para su visualizacion a cualquier usuario dentro del sistema
+- Al acceder a la ficha se debe ver la fecha de su creacion, quien lo creo y a que empleado se le asigno.
+- Los empleados solo pueden ver las fichas a las cuales se les ha dado acceso.
+- Posibilidad de generar un Reporte en tiempo real donde por rango de fecha se pueda ver un listado de las fichas creadas.
+- Posibilidad de generar un Reporte en tiempo real donde por rango de fecha se pueda ver la cantidad de fichas gestionadas por mes.
+- Posibilidad de exportar a PDF los reportes
+
++Notas:
+- El acceso al sistema de los usuarios del dpto. de Mensajeria debe ser distinto al de los usuarios normales.
+- En los procesos de envio o carga no se puede refrezcar la pagina. Deben hacerse peticiones asincronicas para tener una mejor experiencia de usuario.
+- Se debe crear un proyecto LIMPIO en cuanto a organizacion de la estructura MVC del Framework y la escritura del codigo.
+- Enviar por correo el proyecto completo en un ZIP (debe incluir el backup de la BBDD)
+
